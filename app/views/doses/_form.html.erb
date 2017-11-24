@@ -1,0 +1,7 @@
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.input :description %>
+  # <%= f.input :ingredient_id, collection: Ingredient.all.map { |i| [i.name, i.id] } %>
+  <%= f.submit %>
+<% end %>
+
+
